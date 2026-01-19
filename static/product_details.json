@@ -1,0 +1,672 @@
+[
+  {
+    "id": 108,
+    "quantity": 456,
+    "color": "Caro Be",
+    "size": "S",
+    "price": 208000,
+    "product_id": "5025917022414",
+    "createdAt": "2026-01-07T06:11:43.000Z",
+    "updatedAt": "2026-01-07T06:11:43.000Z"
+  },
+  {
+    "id": 109,
+    "quantity": 500,
+    "color": "Caro Be",
+    "size": "M",
+    "price": 215000,
+    "product_id": "5025917022414",
+    "createdAt": "2026-01-07T06:11:43.000Z",
+    "updatedAt": "2026-01-07T06:11:43.000Z"
+  },
+  {
+    "id": 110,
+    "quantity": 500,
+    "color": "Caro Be",
+    "size": "L",
+    "price": 222000,
+    "product_id": "5025917022414",
+    "createdAt": "2026-01-07T06:11:43.000Z",
+    "updatedAt": "2026-01-07T06:11:43.000Z"
+  },
+  {
+    "id": 111,
+    "quantity": 320,
+    "color": "Caro Đỏ",
+    "size": "S",
+    "price": 208000,
+    "product_id": "5025917022414",
+    "createdAt": "2026-01-07T06:11:43.000Z",
+    "updatedAt": "2026-01-07T06:11:43.000Z"
+  },
+  {
+    "id": 112,
+    "quantity": 290,
+    "color": "Caro Đỏ",
+    "size": "M",
+    "price": 212000,
+    "product_id": "5025917022414",
+    "createdAt": "2026-01-07T06:11:43.000Z",
+    "updatedAt": "2026-01-07T06:11:43.000Z"
+  },
+  {
+    "id": 113,
+    "quantity": 450,
+    "color": "Caro Đỏ",
+    "size": "L",
+    "price": 220000,
+    "product_id": "5025917022414",
+    "createdAt": "2026-01-07T06:11:43.000Z",
+    "updatedAt": "2026-01-07T06:11:43.000Z"
+  },
+  {
+    "id": 124,
+    "quantity": 320,
+    "color": "Đen",
+    "size": "M",
+    "price": 198000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 125,
+    "quantity": 300,
+    "color": "Đen",
+    "size": "L",
+    "price": 209000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 126,
+    "quantity": 250,
+    "color": "Đen",
+    "size": "XL",
+    "price": 212000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 127,
+    "quantity": 865,
+    "color": "Xám",
+    "size": "M",
+    "price": 198000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 128,
+    "quantity": 320,
+    "color": "Xám",
+    "size": "L",
+    "price": 209000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 129,
+    "quantity": 358,
+    "color": "Xám",
+    "size": "XL",
+    "price": 209000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 130,
+    "quantity": 320,
+    "color": "Xám",
+    "size": "XXL",
+    "price": 213000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 131,
+    "quantity": 324,
+    "color": "Trắng",
+    "size": "M",
+    "price": 201000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 132,
+    "quantity": 354,
+    "color": "Trắng",
+    "size": "L",
+    "price": 209000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 133,
+    "quantity": 458,
+    "color": "Trắng",
+    "size": "XL",
+    "price": 215000,
+    "product_id": "5864662778722",
+    "createdAt": "2026-01-07T06:14:42.000Z",
+    "updatedAt": "2026-01-07T06:14:42.000Z"
+  },
+  {
+    "id": 134,
+    "quantity": 544,
+    "color": "Đỏ",
+    "size": "S",
+    "price": 169000,
+    "product_id": "6160665053484",
+    "createdAt": "2026-01-07T06:16:15.000Z",
+    "updatedAt": "2026-01-07T06:28:43.000Z"
+  },
+  {
+    "id": 135,
+    "quantity": 560,
+    "color": "Đỏ",
+    "size": "M",
+    "price": 175000,
+    "product_id": "6160665053484",
+    "createdAt": "2026-01-07T06:16:15.000Z",
+    "updatedAt": "2026-01-07T06:16:15.000Z"
+  },
+  {
+    "id": 136,
+    "quantity": 580,
+    "color": "Đỏ",
+    "size": "L",
+    "price": 175000,
+    "product_id": "6160665053484",
+    "createdAt": "2026-01-07T06:16:15.000Z",
+    "updatedAt": "2026-01-07T06:16:15.000Z"
+  },
+  {
+    "id": 137,
+    "quantity": 320,
+    "color": "Đen",
+    "size": "S",
+    "price": 169000,
+    "product_id": "6160665053484",
+    "createdAt": "2026-01-07T06:16:15.000Z",
+    "updatedAt": "2026-01-07T06:16:15.000Z"
+  },
+  {
+    "id": 138,
+    "quantity": 401,
+    "color": "Đen",
+    "size": "M",
+    "price": 175000,
+    "product_id": "6160665053484",
+    "createdAt": "2026-01-07T06:16:15.000Z",
+    "updatedAt": "2026-01-07T06:16:15.000Z"
+  },
+  {
+    "id": 139,
+    "quantity": 587,
+    "color": "Đen",
+    "size": "L",
+    "price": 175000,
+    "product_id": "6160665053484",
+    "createdAt": "2026-01-07T06:16:15.000Z",
+    "updatedAt": "2026-01-07T06:16:15.000Z"
+  },
+  {
+    "id": 140,
+    "quantity": 525,
+    "color": "Đen",
+    "size": "M",
+    "price": 270000,
+    "product_id": "6661498719221",
+    "createdAt": "2026-01-07T06:17:40.000Z",
+    "updatedAt": "2026-01-07T06:17:40.000Z"
+  },
+  {
+    "id": 141,
+    "quantity": 238,
+    "color": "Đen",
+    "size": "L",
+    "price": 300000,
+    "product_id": "6661498719221",
+    "createdAt": "2026-01-07T06:17:40.000Z",
+    "updatedAt": "2026-01-07T06:17:40.000Z"
+  },
+  {
+    "id": 142,
+    "quantity": 322,
+    "color": "Đen",
+    "size": "XL",
+    "price": 310000,
+    "product_id": "6661498719221",
+    "createdAt": "2026-01-07T06:17:40.000Z",
+    "updatedAt": "2026-01-07T06:17:40.000Z"
+  },
+  {
+    "id": 143,
+    "quantity": 434,
+    "color": "Hồng",
+    "size": "M",
+    "price": 270000,
+    "product_id": "6661498719221",
+    "createdAt": "2026-01-07T06:17:40.000Z",
+    "updatedAt": "2026-01-07T06:17:40.000Z"
+  },
+  {
+    "id": 144,
+    "quantity": 320,
+    "color": "Hồng",
+    "size": "L",
+    "price": 300000,
+    "product_id": "6661498719221",
+    "createdAt": "2026-01-07T06:17:40.000Z",
+    "updatedAt": "2026-01-07T06:17:40.000Z"
+  },
+  {
+    "id": 145,
+    "quantity": 324,
+    "color": "Hồng",
+    "size": "XL",
+    "price": 315000,
+    "product_id": "6661498719221",
+    "createdAt": "2026-01-07T06:17:40.000Z",
+    "updatedAt": "2026-01-07T06:17:40.000Z"
+  },
+  {
+    "id": 146,
+    "quantity": 246,
+    "color": "Đen",
+    "size": "M",
+    "price": 155000,
+    "product_id": "6756519147357",
+    "createdAt": "2026-01-07T06:20:12.000Z",
+    "updatedAt": "2026-01-07T06:20:12.000Z"
+  },
+  {
+    "id": 147,
+    "quantity": 328,
+    "color": "Đen",
+    "size": "L",
+    "price": 169000,
+    "product_id": "6756519147357",
+    "createdAt": "2026-01-07T06:20:12.000Z",
+    "updatedAt": "2026-01-07T06:20:12.000Z"
+  },
+  {
+    "id": 148,
+    "quantity": 325,
+    "color": "Đen",
+    "size": "XL",
+    "price": 169000,
+    "product_id": "6756519147357",
+    "createdAt": "2026-01-07T06:20:12.000Z",
+    "updatedAt": "2026-01-07T06:20:12.000Z"
+  },
+  {
+    "id": 149,
+    "quantity": 425,
+    "color": "Xám Tiêu",
+    "size": "M",
+    "price": 159000,
+    "product_id": "6756519147357",
+    "createdAt": "2026-01-07T06:20:12.000Z",
+    "updatedAt": "2026-01-07T06:20:12.000Z"
+  },
+  {
+    "id": 150,
+    "quantity": 434,
+    "color": "Xám Tiêu",
+    "size": "L",
+    "price": 169000,
+    "product_id": "6756519147357",
+    "createdAt": "2026-01-07T06:20:12.000Z",
+    "updatedAt": "2026-01-07T06:20:12.000Z"
+  },
+  {
+    "id": 151,
+    "quantity": 534,
+    "color": "Xám Tiêu",
+    "size": "XL",
+    "price": 170000,
+    "product_id": "6756519147357",
+    "createdAt": "2026-01-07T06:20:12.000Z",
+    "updatedAt": "2026-01-07T06:20:12.000Z"
+  },
+  {
+    "id": 152,
+    "quantity": 323,
+    "color": "Kem",
+    "size": "M",
+    "price": 159000,
+    "product_id": "6756519147357",
+    "createdAt": "2026-01-07T06:20:12.000Z",
+    "updatedAt": "2026-01-07T06:20:12.000Z"
+  },
+  {
+    "id": 153,
+    "quantity": 534,
+    "color": "Kem",
+    "size": "L",
+    "price": 159000,
+    "product_id": "6756519147357",
+    "createdAt": "2026-01-07T06:20:12.000Z",
+    "updatedAt": "2026-01-07T06:20:12.000Z"
+  },
+  {
+    "id": 154,
+    "quantity": 324,
+    "color": "Kem",
+    "size": "XL",
+    "price": 169000,
+    "product_id": "6756519147357",
+    "createdAt": "2026-01-07T06:20:12.000Z",
+    "updatedAt": "2026-01-07T06:20:12.000Z"
+  },
+  {
+    "id": 155,
+    "quantity": 422,
+    "color": "Trắng",
+    "size": "S",
+    "price": 129000,
+    "product_id": "7479948481630",
+    "createdAt": "2026-01-07T06:21:34.000Z",
+    "updatedAt": "2026-01-07T06:28:43.000Z"
+  },
+  {
+    "id": 156,
+    "quantity": 323,
+    "color": "Trắng",
+    "size": "M",
+    "price": 139000,
+    "product_id": "7479948481630",
+    "createdAt": "2026-01-07T06:21:34.000Z",
+    "updatedAt": "2026-01-07T06:21:34.000Z"
+  },
+  {
+    "id": 157,
+    "quantity": 423,
+    "color": "Trắng",
+    "size": "L",
+    "price": 145000,
+    "product_id": "7479948481630",
+    "createdAt": "2026-01-07T06:21:34.000Z",
+    "updatedAt": "2026-01-07T06:21:34.000Z"
+  },
+  {
+    "id": 158,
+    "quantity": 344,
+    "color": "Đen",
+    "size": "S",
+    "price": 129000,
+    "product_id": "7479948481630",
+    "createdAt": "2026-01-07T06:21:34.000Z",
+    "updatedAt": "2026-01-07T06:21:34.000Z"
+  },
+  {
+    "id": 159,
+    "quantity": 323,
+    "color": "Đen",
+    "size": "M",
+    "price": 134000,
+    "product_id": "7479948481630",
+    "createdAt": "2026-01-07T06:21:34.000Z",
+    "updatedAt": "2026-01-07T06:21:34.000Z"
+  },
+  {
+    "id": 160,
+    "quantity": 432,
+    "color": "Đen",
+    "size": "L",
+    "price": 139000,
+    "product_id": "7479948481630",
+    "createdAt": "2026-01-07T06:21:34.000Z",
+    "updatedAt": "2026-01-07T06:21:34.000Z"
+  },
+  {
+    "id": 161,
+    "quantity": 976,
+    "color": "Đỏ",
+    "size": "S",
+    "price": 78500,
+    "product_id": "1999325564474",
+    "createdAt": "2026-01-07T06:22:10.000Z",
+    "updatedAt": "2026-01-07T06:22:10.000Z"
+  },
+  {
+    "id": 162,
+    "quantity": 320,
+    "color": "Đỏ",
+    "size": "M",
+    "price": 85000,
+    "product_id": "1999325564474",
+    "createdAt": "2026-01-07T06:22:10.000Z",
+    "updatedAt": "2026-01-07T06:22:10.000Z"
+  },
+  {
+    "id": 163,
+    "quantity": 1000,
+    "color": "Trắng",
+    "size": "S",
+    "price": 78500,
+    "product_id": "1999325564474",
+    "createdAt": "2026-01-07T06:22:10.000Z",
+    "updatedAt": "2026-01-07T06:22:10.000Z"
+  },
+  {
+    "id": 164,
+    "quantity": 1000,
+    "color": "Trắng",
+    "size": "M",
+    "price": 89000,
+    "product_id": "1999325564474",
+    "createdAt": "2026-01-07T06:22:10.000Z",
+    "updatedAt": "2026-01-07T06:22:10.000Z"
+  },
+  {
+    "id": 165,
+    "quantity": 745,
+    "color": "Xanh Sky",
+    "size": "S",
+    "price": 109000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 166,
+    "quantity": 325,
+    "color": "Xanh Sky",
+    "size": "M",
+    "price": 115000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 167,
+    "quantity": 432,
+    "color": "Xanh Sky",
+    "size": "L",
+    "price": 115000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 168,
+    "quantity": 543,
+    "color": "Xanh Sky",
+    "size": "XL",
+    "price": 120000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 169,
+    "quantity": 234,
+    "color": "Xanh Sky",
+    "size": "XXL",
+    "price": 125000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 170,
+    "quantity": 324,
+    "color": "Xanh Nhạt",
+    "size": "S",
+    "price": 112000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 171,
+    "quantity": 323,
+    "color": "Xanh Nhạt",
+    "size": "M",
+    "price": 120000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 172,
+    "quantity": 123,
+    "color": "Xanh Nhạt",
+    "size": "L",
+    "price": 120000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 173,
+    "quantity": 423,
+    "color": "Xanh Nhạt",
+    "size": "XL",
+    "price": 120000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 174,
+    "quantity": 234,
+    "color": "Xanh Nhạt",
+    "size": "XXL",
+    "price": 129000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 175,
+    "quantity": 321,
+    "color": "Đen",
+    "size": "S",
+    "price": 109000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 176,
+    "quantity": 423,
+    "color": "Đen",
+    "size": "M",
+    "price": 125000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 177,
+    "quantity": 652,
+    "color": "Đen",
+    "size": "L",
+    "price": 130000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 178,
+    "quantity": 423,
+    "color": "Đen",
+    "size": "XL",
+    "price": 130000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 179,
+    "quantity": 543,
+    "color": "Đen",
+    "size": "XXL",
+    "price": 139000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 180,
+    "quantity": 345,
+    "color": "Xám",
+    "size": "S",
+    "price": 109000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 181,
+    "quantity": 423,
+    "color": "Xám",
+    "size": "M",
+    "price": 114000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 182,
+    "quantity": 745,
+    "color": "Xám",
+    "size": "L",
+    "price": 120000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 183,
+    "quantity": 423,
+    "color": "Xám",
+    "size": "XL",
+    "price": 125000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  },
+  {
+    "id": 184,
+    "quantity": 725,
+    "color": "Xám",
+    "size": "XXL",
+    "price": 139000,
+    "product_id": "1414605273940",
+    "createdAt": "2026-01-07T06:24:06.000Z",
+    "updatedAt": "2026-01-07T06:24:06.000Z"
+  }
+]
