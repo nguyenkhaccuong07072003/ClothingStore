@@ -1,7 +1,12 @@
 import axios from 'axios'
 
+// Trong production dùng URL backend trực tiếp, trong dev dùng proxy
+const baseURL = import.meta.env.PROD
+  ? 'https://clothingstore-jdvu.onrender.com/api'
+  : '/api'
+
 const api = axios.create({
-  baseURL: '/api',
+  baseURL,
   timeout: 30000,
   headers: {
     'Content-Type': 'application/json'
