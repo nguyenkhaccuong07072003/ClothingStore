@@ -33,7 +33,7 @@ import ai_router from './routers/ai_router.js';
 
 //Application config
 dotenv.config();
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3333
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
