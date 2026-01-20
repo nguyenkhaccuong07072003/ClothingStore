@@ -249,11 +249,18 @@ onMounted(() => {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    h2 {
+      margin: 0;
+    }
 
     .header-actions {
       display: flex;
       align-items: center;
       gap: 15px;
+      flex-wrap: wrap;
 
       .search-box {
         display: flex;
@@ -269,6 +276,55 @@ onMounted(() => {
 
   .discount {
     color: #f56c6c;
+  }
+}
+
+// Mobile responsive
+@media screen and (max-width: 768px) {
+  .orders-page {
+    .page-header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .header-actions {
+        width: 100%;
+
+        .search-box {
+          flex: 1;
+
+          .el-input {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+
+    :deep(.el-tabs__nav-scroll) {
+      overflow-x: auto;
+    }
+
+    :deep(.el-tabs__nav) {
+      flex-wrap: nowrap;
+    }
+
+    .data-table {
+      :deep(.el-table) {
+        font-size: 12px;
+      }
+
+      :deep(.el-pagination) {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .el-pagination__sizes {
+          display: none;
+        }
+      }
+    }
   }
 }
 </style>

@@ -1,19 +1,31 @@
 <template>
   <el-container class="admin-layout">
+    <!-- Mobile Overlay -->
+    <div
+      v-if="isMobileMenuOpen"
+      class="mobile-overlay"
+      @click="isMobileMenuOpen = false"
+    ></div>
+
     <!-- Sidebar -->
-    <el-aside :width="isCollapsed ? '64px' : '220px'" class="sidebar">
+    <el-aside
+      :width="sidebarWidth"
+      class="sidebar"
+      :class="{ 'mobile-open': isMobileMenuOpen }"
+    >
       <div class="logo">
-        <span v-if="!isCollapsed">Clothing Admin</span>
+        <span v-if="!isCollapsed || isMobile">Clothing Admin</span>
         <el-icon v-else><Shop /></el-icon>
       </div>
 
       <el-menu
         :default-active="activeMenu"
-        :collapse="isCollapsed"
+        :collapse="isCollapsed && !isMobile"
         router
         background-color="#304156"
         text-color="#bfcbd9"
         active-text-color="#409EFF"
+        @select="handleMenuSelect"
       >
         <el-menu-item index="/">
           <el-icon><DataLine /></el-icon>
@@ -43,15 +55,15 @@
     </el-aside>
 
     <!-- Main Content -->
-    <el-container>
+    <el-container class="main-container">
       <!-- Header -->
       <el-header class="header">
         <div class="header-left">
           <el-icon
-            class="collapse-btn"
-            @click="isCollapsed = !isCollapsed"
+            class="collapse-btn mobile-menu-btn"
+            @click="toggleMenu"
           >
-            <Fold v-if="!isCollapsed" />
+            <Fold v-if="!isCollapsed && !isMobile" />
             <Expand v-else />
           </el-icon>
         </div>
@@ -88,7 +100,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth'
 
@@ -97,10 +109,42 @@ const router = useRouter()
 const authStore = useAuthStore()
 
 const isCollapsed = ref(false)
+const isMobile = ref(false)
+const isMobileMenuOpen = ref(false)
+
+const MOBILE_BREAKPOINT = 768
+
+const sidebarWidth = computed(() => {
+  if (isMobile.value) {
+    return '220px'
+  }
+  return isCollapsed.value ? '64px' : '220px'
+})
 
 const activeMenu = computed(() => {
   return route.path
 })
+
+function checkMobile() {
+  isMobile.value = window.innerWidth < MOBILE_BREAKPOINT
+  if (!isMobile.value) {
+    isMobileMenuOpen.value = false
+  }
+}
+
+function toggleMenu() {
+  if (isMobile.value) {
+    isMobileMenuOpen.value = !isMobileMenuOpen.value
+  } else {
+    isCollapsed.value = !isCollapsed.value
+  }
+}
+
+function handleMenuSelect() {
+  if (isMobile.value) {
+    isMobileMenuOpen.value = false
+  }
+}
 
 function handleCommand(command) {
   if (command === 'logout') {
@@ -110,6 +154,15 @@ function handleCommand(command) {
     router.push('/profile')
   }
 }
+
+onMounted(() => {
+  checkMobile()
+  window.addEventListener('resize', checkMobile)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile)
+})
 </script>
 
 <style lang="scss" scoped>
@@ -117,10 +170,22 @@ function handleCommand(command) {
   height: 100vh;
 }
 
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
 .sidebar {
   background-color: #304156;
-  transition: width 0.3s;
+  transition: width 0.3s, transform 0.3s;
   overflow: hidden;
+  z-index: 999;
 
   .logo {
     height: 60px;
@@ -179,5 +244,44 @@ function handleCommand(command) {
   background-color: #f5f7fa;
   padding: 20px;
   overflow-y: auto;
+}
+
+// Mobile responsive
+@media screen and (max-width: 768px) {
+  .mobile-overlay {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+
+    &.mobile-open {
+      transform: translateX(0);
+    }
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .header {
+    padding: 0 12px;
+
+    .header-right {
+      .user-info {
+        .username {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    padding: 12px;
+  }
 }
 </style>

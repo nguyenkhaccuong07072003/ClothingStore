@@ -225,3 +225,64 @@ onMounted(() => {
   fetchCategories()
 })
 </script>
+
+<style lang="scss" scoped>
+.categories-page {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+// Mobile responsive
+@media screen and (max-width: 768px) {
+  .categories-page {
+    .page-header {
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    .data-table {
+      :deep(.el-table) {
+        font-size: 12px;
+      }
+
+      :deep(.el-pagination) {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .el-pagination__sizes {
+          display: none;
+        }
+      }
+    }
+  }
+}
+</style>
+
+<style lang="scss">
+@media screen and (max-width: 768px) {
+  .el-dialog {
+    width: 95% !important;
+    margin: 0 auto;
+
+    .el-form-item__label {
+      width: 100% !important;
+      text-align: left;
+    }
+
+    .el-form-item__content {
+      margin-left: 0 !important;
+    }
+  }
+}
+</style>

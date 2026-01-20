@@ -10,8 +10,8 @@
 
     <!-- Filters -->
     <div class="filter-section">
-      <el-row :gutter="20">
-        <el-col :span="8">
+      <el-row :gutter="12">
+        <el-col :xs="24" :sm="12" :md="8" :lg="8">
           <el-input
             v-model="filters.search"
             placeholder="Tìm kiếm theo tên..."
@@ -20,7 +20,7 @@
             @input="handleSearch"
           />
         </el-col>
-        <el-col :span="6">
+        <el-col :xs="12" :sm="6" :md="6" :lg="6">
           <el-select v-model="filters.category" placeholder="Danh mục" clearable @change="fetchProducts">
             <el-option
               v-for="cat in categories"
@@ -30,7 +30,7 @@
             />
           </el-select>
         </el-col>
-        <el-col :span="4">
+        <el-col :xs="12" :sm="6" :md="4" :lg="4">
           <el-select v-model="filters.isPublic" placeholder="Trạng thái" clearable @change="fetchProducts">
             <el-option label="Công khai" :value="true" />
             <el-option label="Ẩn" :value="false" />
@@ -209,6 +209,62 @@ onMounted(() => {
 .products-page {
   .el-select {
     width: 100%;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .filter-section {
+    .el-col {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+// Mobile responsive
+@media screen and (max-width: 768px) {
+  .products-page {
+    .page-header {
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    .data-table {
+      :deep(.el-table) {
+        font-size: 12px;
+
+        .product-image {
+          width: 40px;
+          height: 40px;
+        }
+
+        // Ẩn một số cột không quan trọng trên mobile
+        .el-table__cell:nth-child(5),
+        .el-table__cell:nth-child(6) {
+          display: none;
+        }
+      }
+
+      :deep(.el-pagination) {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .el-pagination__sizes {
+          display: none;
+        }
+      }
+    }
   }
 }
 </style>

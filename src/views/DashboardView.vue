@@ -30,7 +30,7 @@
 
     <el-row :gutter="20" style="margin-top: 20px">
       <!-- Revenue Chart -->
-      <el-col :span="16">
+      <el-col :xs="24" :sm="24" :md="16" :lg="16">
         <el-card>
           <template #header>
             <div class="chart-header">
@@ -86,8 +86,8 @@
       </el-col>
 
       <!-- Top Products -->
-      <el-col :span="8">
-        <el-card>
+      <el-col :xs="24" :sm="24" :md="8" :lg="8">
+        <el-card class="top-products-card">
           <template #header>
             <span>Top 3 sản phẩm bán chạy</span>
           </template>
@@ -368,9 +368,11 @@ onMounted(() => {
     display: flex;
     gap: 16px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 
     .stat-card {
       flex: 1;
+      min-width: 140px;
     }
   }
 
@@ -391,6 +393,10 @@ onMounted(() => {
 
   .chart-container {
     height: 350px;
+  }
+
+  .top-products-card {
+    margin-top: 0;
   }
 
   .top-products {
@@ -415,6 +421,7 @@ onMounted(() => {
         justify-content: center;
         font-weight: bold;
         margin-right: 12px;
+        flex-shrink: 0;
       }
 
       .product-img {
@@ -423,20 +430,87 @@ onMounted(() => {
         object-fit: cover;
         border-radius: 8px;
         margin-right: 12px;
+        flex-shrink: 0;
       }
 
       .product-info {
         flex: 1;
+        min-width: 0;
 
         .product-name {
           font-weight: 500;
           color: #303133;
           margin-bottom: 4px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .product-sold {
           font-size: 12px;
           color: #909399;
+        }
+      }
+    }
+  }
+}
+
+// Mobile responsive
+@media screen and (max-width: 768px) {
+  .dashboard {
+    .stats-row {
+      gap: 10px;
+
+      .stat-card {
+        min-width: calc(50% - 10px);
+        flex: unset;
+
+        .stat-value {
+          font-size: 24px;
+        }
+
+        .stat-label {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .chart-header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      span {
+        font-size: 14px;
+      }
+    }
+
+    .chart-filters {
+      width: 100%;
+
+      .el-select,
+      .el-date-picker {
+        width: 100% !important;
+      }
+    }
+
+    .chart-container {
+      height: 250px;
+    }
+
+    .top-products-card {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dashboard {
+    .stats-row {
+      .stat-card {
+        min-width: 100%;
+
+        .stat-value {
+          font-size: 20px;
         }
       }
     }

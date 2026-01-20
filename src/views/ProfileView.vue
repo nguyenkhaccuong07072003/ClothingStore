@@ -6,7 +6,7 @@
 
     <el-row :gutter="20">
       <!-- Profile Info -->
-      <el-col :span="12">
+      <el-col :xs="24" :sm="24" :md="12" :lg="12">
         <el-card>
           <template #header>
             <span>Thông tin cá nhân</span>
@@ -52,7 +52,7 @@
       </el-col>
 
       <!-- Change Password -->
-      <el-col :span="12">
+      <el-col :xs="24" :sm="24" :md="12" :lg="12">
         <el-card>
           <template #header>
             <span>Đổi mật khẩu</span>
@@ -263,6 +263,10 @@ onMounted(() => {
 
   .page-header {
     margin-bottom: 20px;
+
+    h2 {
+      margin: 0;
+    }
   }
 
   .el-card {
@@ -273,6 +277,26 @@ onMounted(() => {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+  }
+}
+
+// Mobile responsive
+@media screen and (max-width: 768px) {
+  .profile-page {
+    .page-header {
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    :deep(.el-form-item__label) {
+      width: 100% !important;
+      text-align: left;
+    }
+
+    :deep(.el-form-item__content) {
+      margin-left: 0 !important;
+    }
   }
 }
 </style>

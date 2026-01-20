@@ -104,10 +104,12 @@ async function handleLogin() {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
 }
 
 .login-box {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 40px;
   background: #fff;
   border-radius: 16px;
@@ -127,6 +129,22 @@ async function handleLogin() {
 
   .login-btn {
     width: 100%;
+  }
+}
+
+// Mobile responsive
+@media screen and (max-width: 480px) {
+  .login-box {
+    padding: 24px;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
   }
 }
 </style>

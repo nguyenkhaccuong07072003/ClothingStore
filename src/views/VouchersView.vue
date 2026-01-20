@@ -472,8 +472,26 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .vouchers-page {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    h2 {
+      margin: 0;
+    }
+  }
+
   .filter-section {
     margin-bottom: 20px;
+    overflow-x: auto;
+
+    :deep(.el-radio-group) {
+      flex-wrap: nowrap;
+    }
   }
 
   .text-muted {
@@ -539,12 +557,67 @@ onMounted(() => {
     color: #909399;
   }
 }
+
+// Mobile responsive
+@media screen and (max-width: 768px) {
+  .vouchers-page {
+    .page-header {
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    .filter-section {
+      :deep(.el-radio-button__inner) {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+    }
+
+    .data-table {
+      :deep(.el-table) {
+        font-size: 12px;
+      }
+
+      :deep(.el-pagination) {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .el-pagination__sizes {
+          display: none;
+        }
+      }
+    }
+  }
+}
 </style>
 
 <style lang="scss">
 .voucher-dialog {
   .el-dialog__body {
     overflow: visible !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .voucher-dialog {
+    width: 95% !important;
+    margin: 0 auto;
+
+    .el-form-item__label {
+      width: 100% !important;
+      text-align: left;
+    }
+
+    .el-form-item__content {
+      margin-left: 0 !important;
+    }
+
+    .el-radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
   }
 }
 </style>
