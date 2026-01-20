@@ -12,7 +12,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'env.API_BASE_URL',
+        target: 'https://clothingstore-jdvu.onrender.com',
         changeOrigin: true
       }
     }
