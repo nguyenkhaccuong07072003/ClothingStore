@@ -10,7 +10,7 @@ router.use(express.json());
 // Khởi tạo Gemini client
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({
-    model: "models/gemini-2.0-flash-001"
+    model: "models/gemini-2.0"
 });
 const imgTableData = JSON.parse(fs.readFileSync("./static/image_table.json", "utf-8"));
 const productData = JSON.parse(fs.readFileSync("./static/products.json", "utf-8"));
